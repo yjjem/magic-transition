@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DF6FBB2A29DEB23900BE310A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB2929DEB23900BE310A /* AppDelegate.swift */; };
 		DF6FBB2C29DEB23900BE310A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB2B29DEB23900BE310A /* SceneDelegate.swift */; };
-		DF6FBB2E29DEB23900BE310A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB2D29DEB23900BE310A /* ViewController.swift */; };
+		DF6FBB2E29DEB23900BE310A /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB2D29DEB23900BE310A /* CardListViewController.swift */; };
 		DF6FBB3329DEB23A00BE310A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6FBB3229DEB23A00BE310A /* Assets.xcassets */; };
 		DF6FBB3629DEB23A00BE310A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6FBB3429DEB23A00BE310A /* LaunchScreen.storyboard */; };
 		DF6FBB3E29DEBAC700BE310A /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB3D29DEBAC700BE310A /* CardCell.swift */; };
+		DF6FBB4029DEBE0D00BE310A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB3F29DEBE0D00BE310A /* DetailsViewController.swift */; };
+		DF6FBB4229DEC52C00BE310A /* CardTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6FBB4129DEC52C00BE310A /* CardTransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF6FBB2629DEB23900BE310A /* magic-transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "magic-transition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6FBB2929DEB23900BE310A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6FBB2B29DEB23900BE310A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF6FBB2D29DEB23900BE310A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF6FBB2D29DEB23900BE310A /* CardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
 		DF6FBB3229DEB23A00BE310A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6FBB3529DEB23A00BE310A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF6FBB3729DEB23A00BE310A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF6FBB3D29DEBAC700BE310A /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		DF6FBB3F29DEBE0D00BE310A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DF6FBB4129DEC52C00BE310A /* CardTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				DF6FBB2929DEB23900BE310A /* AppDelegate.swift */,
 				DF6FBB2B29DEB23900BE310A /* SceneDelegate.swift */,
 				DF6FBB3D29DEBAC700BE310A /* CardCell.swift */,
-				DF6FBB2D29DEB23900BE310A /* ViewController.swift */,
+				DF6FBB2D29DEB23900BE310A /* CardListViewController.swift */,
+				DF6FBB3F29DEBE0D00BE310A /* DetailsViewController.swift */,
 				DF6FBB3229DEB23A00BE310A /* Assets.xcassets */,
 				DF6FBB3429DEB23A00BE310A /* LaunchScreen.storyboard */,
 				DF6FBB3729DEB23A00BE310A /* Info.plist */,
+				DF6FBB4129DEC52C00BE310A /* CardTransitionManager.swift */,
 			);
 			path = "magic-transition";
 			sourceTree = "<group>";
@@ -137,10 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6FBB2E29DEB23900BE310A /* ViewController.swift in Sources */,
+				DF6FBB4229DEC52C00BE310A /* CardTransitionManager.swift in Sources */,
+				DF6FBB2E29DEB23900BE310A /* CardListViewController.swift in Sources */,
 				DF6FBB2A29DEB23900BE310A /* AppDelegate.swift in Sources */,
 				DF6FBB2C29DEB23900BE310A /* SceneDelegate.swift in Sources */,
 				DF6FBB3E29DEBAC700BE310A /* CardCell.swift in Sources */,
+				DF6FBB4029DEBE0D00BE310A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,11 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class CardListViewController: UIViewController {
     
     let tableView = UITableView(frame: .init(), style: .insetGrouped)
-
+    let transitionManager = CardTransitionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +38,7 @@ final class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension CardListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -64,8 +65,12 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController: UITableViewDelegate {
+extension CardListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let details = DetailViewController()
+        details.transitioningDelegate = transitionManager
+        present(details, animated: true)
     }
 }
